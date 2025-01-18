@@ -1,0 +1,2 @@
+---
+backup_dir: "~/cisco-backup/backups/{{hostvars.localhost.DTG}}"
