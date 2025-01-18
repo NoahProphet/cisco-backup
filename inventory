@@ -2,20 +2,5 @@ localhost
 
 [Cisco-Swtiches]
 
-SF11 ansible_host=192.168.250.11 ansible_user=
+SF11 ansible_host=192.168.1.1 ansible_user=
 
-SF12 ansible_host=192.168.250.12 ansible_user=
-
-SF21 ansible_host=192.168.250.21 ansible_user=
-
-SF22 ansible_host=192.168.250.22 ansible_user=
-
-SF31 ansible_host=192.168.250.31 ansible_user=
-
-SF32 ansible_host=192.168.250.32 ansible_user=
-
-SF41 ansible_host=192.168.250.41 ansible_user=
-
-SF42 ansible_host=192.168.250.42 ansible_user=
-
-SF51 ansible_host=192.168.250.51 ansible_user=
