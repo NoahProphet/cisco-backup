@@ -1,6 +1,6 @@
 ---
 - name: Backup Cisco configuration
-  hosts: SF42
+  hosts: Cisco-Swtiches
   gather_facts: false
   roles:
     - cisco-backup
