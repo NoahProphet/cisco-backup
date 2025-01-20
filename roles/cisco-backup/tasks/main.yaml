@@ -1,4 +1,11 @@
 ---
+- name: Create backup directory if not exists
+  file:
+    path: "{{backup_dir}}"
+    state: directory
+    mode: '0755'
+  delegate_to: localhost
+
 - name: show run on device
   ios_command:
     commands:
@@ -8,5 +15,5 @@
 - name: save output to ansible host
   copy:
     content: "{{config.stdout[0]}}"
-    dest: "~/cisco-backup/backups/{{hostvars.localhost.DTG}}"
+    dest: "{{backup_dir}}/config-{{ inventory_hostname }}-{{ansible_date_time}}.conf"
 
