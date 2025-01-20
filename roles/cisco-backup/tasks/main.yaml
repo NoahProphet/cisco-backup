@@ -4,6 +4,7 @@
     path: "{{backup_dir}}"
     state: directory
     mode: '0755'
+  delegate_to: localhost
 
 - name: show run on device
   ios_command:

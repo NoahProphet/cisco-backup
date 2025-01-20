@@ -1,24 +1,9 @@
 localhost
 
 [Cisco-Swtiches]
-SF11 ansible_host=192.168.250.11 ansible_ssh_password="$SW SF11 #"
-SF12 ansible_host=192.168.250.12 ansible_ssh_password="$SW SF12 #"
-SF21 ansible_host=192.168.250.21 ansible_ssh_password="$SW SF21 #"
-SF22 ansible_host=192.168.250.22 ansible_ssh_password="$SW SF22 #"
-SF31 ansible_host=192.168.250.31 ansible_ssh_password="$SW SF31 #"
-SF32 ansible_host=192.168.250.32 ansible_ssh_password="$SW SF32 #"
-SF41 ansible_host=192.168.250.41 ansible_ssh_password="$SW SF41 #"
-SF42 ansible_host=192.168.250.42 ansible_ssh_password="$SW SF42 #"
-SF51 ansible_host=192.168.250.51 ansible_ssh_password="$SW SF51 #"
-SR100 ansible_host=192.168.250.100 ansible_ssh_password="$SY1qaz@1qaz#$"
-SR110 ansible_host=192.168.250.110 ansible_ssh_password="$SY1qaz@1qaz#$"
-SR120 ansible_host=192.168.250.120 ansible_ssh_password="$SY1qaz@1qaz#$"
-SR130 ansible_host=192.168.250.130 ansible_ssh_password="$SY1qaz@1qaz#$"
-SR140 ansible_host=192.168.250.140 ansible_ssh_password="$SY1qaz@1qaz#$"
-SR250 ansible_host=192.168.250.250 ansible_ssh_password="$SY1qaz@1qaz#$"
-SR251 ansible_host=192.168.250.251 ansible_ssh_password="$SY1qaz@1qaz#$"
+CiscoHostname ansible_host=192.168.1.1 ansible_ssh_password="YourPassword"
 
 [Cisco-Swtiches:vars]
 ansible_connection=network_cli 
 ansible_network_os=ios
-ansible_user=admin
+ansible_user="username"
