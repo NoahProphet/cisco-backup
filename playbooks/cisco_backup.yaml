@@ -1,15 +1,6 @@
 ---
-- name: Ansible host setup
-  hosts: localhost
-  gather_facts: false
-  roles:
-    - host-setup
-
-
-
-
 - name: Backup Cisco configuration
-  hosts: Cisco-Switches
+  hosts: SF42
   gather_facts: false
   roles:
-    - cisco_backup
+    - cisco-backup
